@@ -1,0 +1,3 @@
+Kan hende det var en enklere måte å lage en kamuflert onclick funksjon i teksten som ikke involverte å style buttons til døde, men jeg var allerede så dypt inn i button-land da jeg innså at man kunne putte onclick på andre ting....
+
+Er også verdt å nevne at man kan tape det siste nivået av dette, om man var veldig rask på å finne siste ord
