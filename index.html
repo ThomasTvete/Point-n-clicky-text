@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point'n'Clicky Text Adventure</title>
+    <style>
+        button {
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            font-size: 100%;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: text;
+            padding: 0;
+            color: whitesmoke; 
+            text-shadow: 1px 1px 2px saddlebrown;           
+        }
+
+        div {
+            display: none;
+            text-align: center;
+        }
+
+        h1 {
+            color: maroon;
+            font-size: 3rem;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        p {
+            font-size: calc(15px + 0.390625vw);
+            color: whitesmoke;
+            text-shadow: 1px 1px 2px saddlebrown; 
+        }
+    </style>
+</head>
+
+<body style="background-color: burlywood;">
+    <div id="wool" style="display: contents;">
+        <h1>The Lone Wolf in a Sea of Sheep</h1>
+
+        <p> Wool Wool Wool Wool Wool Wool Wool <br />
+            Wool Wool Wool Wool Wool Wool Wool <br />
+            Wool Wool Wool Wool Wool Wool Wool <br />
+            Wool Wool Wool Wool Wool Wool Wool <br />
+            Wool Wool Wool Wool Wool Wool Wool <br />
+            Wool Wool Wool
+
+            <button onclick="NextGame1()">
+                Wolf
+            </button>
+
+            Wool Wool Wool <br />
+            Wool Wool Wool Wool Wool Wool Wool <br />
+            Wool Wool Wool Wool Wool Wool Wool <br />
+        </p>
+
+    </div>
+
+    <div id="wolf">
+        <img src="img/wolf.jpg" />
+    </div>
+
+    <div id="rats">
+        <h1>You're Here to Kill the Rats, Not the Cats.... Right?</h1>
+
+        <p> Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest
+
+            <button onclick="NextGame2()">
+                Pets
+            </button>
+
+            Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+            Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest Pest<br />
+        </p>
+    </div>
+
+    <div id="cats">
+        <img src="img/cat-oops.webp" />
+    </div>
+
+    <div id="clams">
+        <h1>Calm Your Clams</h1>
+
+        <p> Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam
+
+            <button onclick="NextGame3()">
+                Calm
+            </button>
+
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+            Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam Clam<br />
+        </p>
+    </div>
+
+    <div id="calm">
+        <img src="img/clam.png" />
+    </div>
+
+    <div id="except">
+        <h1> Always Expect the Unexceptional</h1>
+
+        <p> Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+            Except Except Except Except Except Except Except
+
+            <button onclick="NextGame4()">
+                Expect
+            </button>
+            Except Except Except Except<br />
+            Except Except Except Except Except Except Except Except Except Except Except Except<br />
+        </p>
+
+    </div>
+
+    <div id="expect">
+        <img src="img/eggman.png" />
+    </div>
+
+    <div id="waldo">
+        <h1>Where the <i>Fuck</i> is Waldo</h1>
+
+        <p>Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö
+
+            <button onclick="EndGame()">
+                Waldo
+            </button>
+
+            Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+            Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö Waldö<br />
+        </p>
+
+    </div>
+
+    <div id="YouWin">
+        <img src="img/youwin.jpg" />
+    </div>
+
+    <div id="Prize">
+        <img src="img/secretprize.gif" />
+    </div>
+
+    <div id="WaldoSniper">
+        <img src="img/sniperwaldo.jpg" />
+    </div>
+
+    <div id="SniperGif">
+        <img src="img/Headshot.gif" />
+    </div>
+
+    <div id="YouAreDead">
+        <img src="img/youdied.jpg" />
+    </div>
+
+    <script>
+
+        function NextGame1() {
+            ImageReward1();
+            setTimeout(NewText1, 2000)
+        }
+        function ImageReward1() {
+            document.getElementById('wool').innerHTML = document.getElementById('wolf').innerHTML
+        }
+        function NewText1() {
+            document.getElementById('wool').innerHTML = document.getElementById('rats').innerHTML
+        }
+        function NextGame2() {
+            ImageReward2();
+            setTimeout(NewText2, 1700)
+        }
+        function ImageReward2() {
+            document.getElementById('wool').innerHTML = document.getElementById('cats').innerHTML
+        }
+        function NewText2() {
+            document.getElementById('wool').innerHTML = document.getElementById('clams').innerHTML
+        }
+        function NextGame3() {
+            ImageReward3();
+            setTimeout(NewText3, 2000)
+        }
+        function ImageReward3() {
+            document.getElementById('wool').innerHTML = document.getElementById('calm').innerHTML
+        }
+        function NewText3() {
+            document.getElementById('wool').innerHTML = document.getElementById('except').innerHTML
+        }
+        function NextGame4() {
+            ImageReward4();
+            setTimeout(NewText4, 2000);
+            WaldoSniper = window.setTimeout(GameOver, 12000);
+        }
+        function ImageReward4() {
+            document.getElementById('wool').innerHTML = document.getElementById('expect').innerHTML
+        }
+        function NewText4() {
+            document.getElementById('wool').innerHTML = document.getElementById('waldo').innerHTML
+        }
+        function EndGame() {
+            clearTimeout(WaldoSniper);
+            ImageReward5();
+            setTimeout(Winner, 5000);
+
+        }
+        function ImageReward5() {
+            document.getElementById('wool').innerHTML = document.getElementById('YouWin').innerHTML;
+        }
+        function Winner() {
+            document.getElementById('wool').innerHTML = document.getElementById('Prize').innerHTML;
+        }
+        function GameOver() {
+            Sniped();
+            setTimeout(Shot, 2000);
+            setTimeout(Dead, 6500);
+        }
+        function Sniped() {
+            document.getElementById('wool').innerHTML = document.getElementById('WaldoSniper').innerHTML;
+        }
+        function Shot() {
+            document.getElementById('wool').innerHTML = document.getElementById('SniperGif').innerHTML;
+        }
+        function Dead() {
+            document.getElementById('wool').innerHTML = document.getElementById('YouAreDead').innerHTML;
+        }
+
+
+
+    </script>
+</body>
+
+
+</html>
